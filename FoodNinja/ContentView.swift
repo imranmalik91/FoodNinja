@@ -15,7 +15,7 @@ struct ContentView: View {
             if endSplash {
                 SplashView()
             } else {
-                Text("Onboarding...")
+                OnboardingView()
             }
         }
         .onAppear(perform: {
