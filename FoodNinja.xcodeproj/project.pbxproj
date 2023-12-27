@@ -11,6 +11,8 @@
 		1D5F02702B3814D500775AA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F026F2B3814D500775AA7 /* ContentView.swift */; };
 		1D5F02722B3814D700775AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5F02712B3814D700775AA7 /* Assets.xcassets */; };
 		1D5F02752B3814D700775AA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5F02742B3814D700775AA7 /* Preview Assets.xcassets */; };
+		1D5F027D2B38155A00775AA7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F027C2B38155A00775AA7 /* SplashView.swift */; };
+		1D5F02802B3815B100775AA7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F027F2B3815B100775AA7 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		1D5F026F2B3814D500775AA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D5F02712B3814D700775AA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D5F02742B3814D700775AA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D5F027C2B38155A00775AA7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		1D5F027F2B3815B100775AA7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		1D5F026C2B3814D500775AA7 /* FoodNinja */ = {
 			isa = PBXGroup;
 			children = (
+				1D5F027E2B38159F00775AA7 /* Extensions */,
+				1D5F027B2B38153C00775AA7 /* Splash */,
 				1D5F026D2B3814D500775AA7 /* FoodNinjaApp.swift */,
 				1D5F026F2B3814D500775AA7 /* ContentView.swift */,
 				1D5F02712B3814D700775AA7 /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				1D5F02742B3814D700775AA7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D5F027B2B38153C00775AA7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				1D5F027C2B38155A00775AA7 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		1D5F027E2B38159F00775AA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D5F027F2B3815B100775AA7 /* Image.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5F02702B3814D500775AA7 /* ContentView.swift in Sources */,
+				1D5F02802B3815B100775AA7 /* Image.swift in Sources */,
 				1D5F026E2B3814D500775AA7 /* FoodNinjaApp.swift in Sources */,
+				1D5F027D2B38155A00775AA7 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
