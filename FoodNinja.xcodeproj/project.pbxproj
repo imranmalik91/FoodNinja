@@ -16,6 +16,7 @@
 		1DD9D38F2B419FCE00D574A4 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9D38C2B419FCE00D574A4 /* OnboardingContent.swift */; };
 		1DD9D3902B419FCE00D574A4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9D38D2B419FCE00D574A4 /* OnboardingView.swift */; };
 		1DD9D3912B419FCE00D574A4 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9D38E2B419FCE00D574A4 /* OnboardingViewModel.swift */; };
+		1DD9D3942B41A36C00D574A4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9D3932B41A36C00D574A4 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1DD9D38C2B419FCE00D574A4 /* OnboardingContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		1DD9D38D2B419FCE00D574A4 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1DD9D38E2B419FCE00D574A4 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		1DD9D3932B41A36C00D574A4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		1D5F026C2B3814D500775AA7 /* FoodNinja */ = {
 			isa = PBXGroup;
 			children = (
+				1DD9D3922B41A35600D574A4 /* Components */,
 				1DD9D38B2B419FCE00D574A4 /* OnboardingView */,
 				1D5F027E2B38159F00775AA7 /* Extensions */,
 				1D5F027B2B38153C00775AA7 /* Splash */,
@@ -104,6 +107,14 @@
 				1DD9D38E2B419FCE00D574A4 /* OnboardingViewModel.swift */,
 			);
 			path = OnboardingView;
+			sourceTree = "<group>";
+		};
+		1DD9D3922B41A35600D574A4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1DD9D3932B41A36C00D574A4 /* CustomButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				1DD9D38F2B419FCE00D574A4 /* OnboardingContent.swift in Sources */,
 				1D5F02802B3815B100775AA7 /* Image.swift in Sources */,
 				1DD9D3902B419FCE00D574A4 /* OnboardingView.swift in Sources */,
+				1DD9D3942B41A36C00D574A4 /* CustomButton.swift in Sources */,
 				1D5F026E2B3814D500775AA7 /* FoodNinjaApp.swift in Sources */,
 				1DD9D3912B419FCE00D574A4 /* OnboardingViewModel.swift in Sources */,
 				1D5F027D2B38155A00775AA7 /* SplashView.swift in Sources */,
