@@ -7,12 +7,38 @@
 
 import SwiftUI
 
+struct OnboardingPage {
+    let imageName: ImageName
+    let title: String
+    let description: String
+}
+
 struct OnboardingContent: View {
+    let page: OnboardingPage
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(name: page.imageName)
+                .resizable()
+                .scaledToFit()
+            
+            Text(page.title)
+                .font(.system(size: 24, weight: .semibold))
+                .multilineTextAlignment(.center)
+                .padding(.top)
+                .padding(.horizontal)
+            
+            Text(page.description)
+                .font(.system(size: 12))
+                .multilineTextAlignment(.center)
+                .padding(.top)
+                .padding(.horizontal)
+            
+        }
+        .frame(maxHeight: .infinity, alignment: .top)
     }
 }
 
 #Preview {
-    OnboardingContent()
+    OnboardingContent(page: OnboardingPage(imageName: .onboarding1, title: "Find your  Comfort Food here", description: "Here You Can find a chef or dish for every taste and color. Enjoy!"))
 }

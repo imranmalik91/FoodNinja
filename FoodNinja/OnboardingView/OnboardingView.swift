@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @ObservedObject private var viewModel = OnboardingViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForEach(0..<viewModel.onboardingPages.count) { index in
+                OnboardingContent(page: viewModel.onboardingPages[index])
+            }
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
     }
 }
 
