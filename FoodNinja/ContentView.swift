@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var endSplash = true
+    @ObservedObject private var appState = AppState()
     
     var body: some View {
         NavigationView {
             if endSplash {
                 SplashView()
+            } else if appState.isOnboardingDone {
+                Text("Login")
             } else {
                 OnboardingView()
+                    .environmentObject(appState)
             }
         }
         .onAppear(perform: {
