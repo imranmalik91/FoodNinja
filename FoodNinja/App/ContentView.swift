@@ -16,7 +16,7 @@ struct ContentView: View {
             if endSplash {
                 SplashView()
             } else if appState.isOnboardingDone {
-                Text("Login")
+                LoginView()
             } else {
                 OnboardingView()
                     .environmentObject(appState)
