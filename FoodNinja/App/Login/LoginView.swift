@@ -23,10 +23,11 @@ struct LoginView: View {
                 Text("Login To Your Account")
                     .font(.system(size: 20, weight: .bold))
                     .padding(.top, 50)
-                
-                TextField("Email", text: $viewModel.email)
+                                
+                CustomTextField(placeholder: "Email", text: $viewModel.email)
                     .padding(.top, 40)
-                TextField("Password", text: $viewModel.password)
+                
+                CustomTextField(placeholder: "Password", text: $viewModel.password, isPasswordField: true)
                     .padding(.top)
                 
                 
