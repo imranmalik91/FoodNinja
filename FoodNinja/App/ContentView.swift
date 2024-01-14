@@ -10,13 +10,21 @@ import SwiftUI
 struct ContentView: View {
     @State private var endSplash = true
     @ObservedObject private var appState = AppState()
+    @StateObject private var navigationStore = NavigationStore()
     
     var body: some View {
         NavigationView {
             if endSplash {
                 SplashView()
             } else if appState.isOnboardingDone {
-                LoginView()
+                NavigationStack(path: $navigationStore.path) {
+                    LoginView()
+                        .environmentObject(navigationStore)
+                        .navigationDestination(for: NavigationDestination.self) { path in
+                            path.view
+                                .environmentObject(navigationStore)
+                        }
+                }
             } else {
                 OnboardingView()
                     .environmentObject(appState)
