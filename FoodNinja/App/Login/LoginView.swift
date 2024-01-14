@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    
+    @EnvironmentObject private var navigationStore: NavigationStore
     @ObservedObject private var viewModel = LoginViewModel()
     
     var body: some View {
@@ -60,10 +60,21 @@ struct LoginView: View {
                 
                 CustomButton(config: config)
                     .frame(width: 140)
-                    .padding(.top, 40)
+                    .padding(.top)
                 
+                Button {
+                    navigationStore.push(to: .signup("Imran Malik"))
+                } label: {
+                    Text("Don't have an account, Signup here")
+                        .font(.system(size: 12, weight: .medium))
+                        .foregroundColor(.lightGreen)
+                }
+                .padding(.top)
+                .padding(.bottom, 40)
+        
             }
             .padding(.horizontal)
+            .scrollIndicators(.hidden)
         }
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D41E08D2B53DACB008D898B /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41E08C2B53DACB008D898B /* SignupView.swift */; };
+		1D41E08F2B53DB3F008D898B /* NavigationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41E08E2B53DB3F008D898B /* NavigationStore.swift */; };
 		1D5F026E2B3814D500775AA7 /* FoodNinjaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F026D2B3814D500775AA7 /* FoodNinjaApp.swift */; };
 		1D5F02702B3814D500775AA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F026F2B3814D500775AA7 /* ContentView.swift */; };
 		1D5F02722B3814D700775AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5F02712B3814D700775AA7 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D41E08C2B53DACB008D898B /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		1D41E08E2B53DB3F008D898B /* NavigationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStore.swift; sourceTree = "<group>"; };
 		1D5F026A2B3814D500775AA7 /* FoodNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5F026D2B3814D500775AA7 /* FoodNinjaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNinjaApp.swift; sourceTree = "<group>"; };
 		1D5F026F2B3814D500775AA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D41E08B2B53DABD008D898B /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				1D41E08C2B53DACB008D898B /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		1D5F02612B3814D500775AA7 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				1DE16ABF2B42C83F009F021E /* AppState.swift */,
+				1D41E08E2B53DB3F008D898B /* NavigationStore.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 		1DE16AC22B42CB35009F021E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1D41E08B2B53DABD008D898B /* Signup */,
 				1DE16AC12B42CB2E009F021E /* Login */,
 				1DD9D38B2B419FCE00D574A4 /* OnboardingView */,
 				1D5F027B2B38153C00775AA7 /* Splash */,
@@ -234,7 +248,9 @@
 				1D93C8BA2B4DACEB00DEE67E /* CustomTextField.swift in Sources */,
 				1DD9D3912B419FCE00D574A4 /* OnboardingViewModel.swift in Sources */,
 				1DE16AC42B42CB5B009F021E /* LoginView.swift in Sources */,
+				1D41E08D2B53DACB008D898B /* SignupView.swift in Sources */,
 				1D5F027D2B38155A00775AA7 /* SplashView.swift in Sources */,
+				1D41E08F2B53DB3F008D898B /* NavigationStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
