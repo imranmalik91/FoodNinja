@@ -23,6 +23,7 @@
 		1DE16AC02B42C83F009F021E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE16ABF2B42C83F009F021E /* AppState.swift */; };
 		1DE16AC42B42CB5B009F021E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE16AC32B42CB5B009F021E /* LoginView.swift */; };
 		1DE16AC62B42CB67009F021E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE16AC52B42CB67009F021E /* LoginViewModel.swift */; };
+		1DF3CF602B5ADB6D00221C4B /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3CF5F2B5ADB6D00221C4B /* SignupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		1DE16ABF2B42C83F009F021E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1DE16AC32B42CB5B009F021E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1DE16AC52B42CB67009F021E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1DF3CF5F2B5ADB6D00221C4B /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				1D41E08C2B53DACB008D898B /* SignupView.swift */,
+				1DF3CF5F2B5ADB6D00221C4B /* SignupViewModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				1D5F02802B3815B100775AA7 /* Image.swift in Sources */,
 				1DE16AC02B42C83F009F021E /* AppState.swift in Sources */,
 				1DD9D3902B419FCE00D574A4 /* OnboardingView.swift in Sources */,
+				1DF3CF602B5ADB6D00221C4B /* SignupViewModel.swift in Sources */,
 				1DD9D3942B41A36C00D574A4 /* CustomButton.swift in Sources */,
 				1D5F026E2B3814D500775AA7 /* FoodNinjaApp.swift in Sources */,
 				1D93C8BA2B4DACEB00DEE67E /* CustomTextField.swift in Sources */,

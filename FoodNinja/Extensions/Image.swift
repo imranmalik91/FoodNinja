@@ -8,13 +8,15 @@
 import SwiftUI
 
 enum ImageName: String {
-    case splash, splashLogo, facebook, google
+    case splash, splashLogo, facebook, google, lock, message, profile
     case onboarding1 = "onboarding-1"
     case onboarding2 = "onboarding-2"
     
     case person = "person.fill"
     case eye = "eye"
     case eyeSlash = "eye.slash"
+    case checkMarkFilled = "checkmark.circle.fill"
+    case checkmark = "checkmark.circle"
 }
 
 extension Image {
