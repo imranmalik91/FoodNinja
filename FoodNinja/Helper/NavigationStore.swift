@@ -8,21 +8,25 @@
 import SwiftUI
 
 enum NavigationDestination: Hashable {
-    case login, signup(String)
+    case login, signup
     
     @ViewBuilder
     var view: some View {
         switch self {
         case .login:
             LoginView()
-        case .signup(let name):
-            SignupView(name: name)
+        case .signup:
+            SignupView()
         }
     }
 }
 
 final class NavigationStore: ObservableObject {
     @Published var path: [NavigationDestination] = []
+    
+    func popToRoot() {
+        path.removeAll()
+    }
     
     func push(to view: NavigationDestination) {
         path.append(view)

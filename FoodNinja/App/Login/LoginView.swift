@@ -63,7 +63,7 @@ struct LoginView: View {
                     .padding(.top)
                 
                 Button {
-                    navigationStore.push(to: .signup("Imran Malik"))
+                    navigationStore.push(to: .signup)
                 } label: {
                     Text("Don't have an account, Signup here")
                         .font(.system(size: 12, weight: .medium))

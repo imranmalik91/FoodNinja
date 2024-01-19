@@ -17,7 +17,7 @@ struct CustomTextField: View {
     var body: some View {
         ZStack {
             if let leftImage = leftImage {
-                Image(sysNameImage: leftImage)
+                Image(name: leftImage)
                     .foregroundColor(.gray)
                     .scaledToFit()
                     .frame(height: 20)
@@ -29,10 +29,10 @@ struct CustomTextField: View {
             if isPasswordField {
                 if showPassword {
                     SecureField(placeholder, text: $text)
-                        .padding(.leading, leftImage == nil ? 20 : 40)
+                        .padding(.leading, leftImage == nil ? 20 : 50)
                 } else {
                     TextField(placeholder, text: $text)
-                        .padding(.leading, leftImage == nil ? 20 : 40)
+                        .padding(.leading, leftImage == nil ? 20 : 50)
                 }
                 
                 Image(sysNameImage: showPassword ? .eyeSlash : .eye)
@@ -48,7 +48,7 @@ struct CustomTextField: View {
                 
             } else {
                 TextField(placeholder, text: $text)
-                    .padding(.leading, leftImage == nil ? 20 : 40)
+                    .padding(.leading, leftImage == nil ? 20 : 50)
             }
         }
         .frame(height: 57)
