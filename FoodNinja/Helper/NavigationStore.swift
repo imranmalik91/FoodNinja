@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum NavigationDestination: Hashable {
-    case login, signup
+    case login, signup, signupBioView
     
     @ViewBuilder
     var view: some View {
@@ -17,6 +17,8 @@ enum NavigationDestination: Hashable {
             LoginView()
         case .signup:
             SignupView()
+        case .signupBioView:
+            SignupBioView()
         }
     }
 }
@@ -26,6 +28,10 @@ final class NavigationStore: ObservableObject {
     
     func popToRoot() {
         path.removeAll()
+    }
+    
+    func popView() {
+        path.removeLast()
     }
     
     func push(to view: NavigationDestination) {
