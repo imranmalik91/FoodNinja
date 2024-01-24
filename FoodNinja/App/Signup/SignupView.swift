@@ -48,7 +48,7 @@ struct SignupView: View {
                 
                 
                 let config = CustomButtonConfig(title: "Create Account") {
-                    
+                    navigationStore.push(to: .signupBioView)
                 }
                 
                 CustomButton(config: config)
@@ -67,6 +67,7 @@ struct SignupView: View {
                 
             }
             .padding(.horizontal)
+            .navigationBarBackButtonHidden(true)
         }
     }
 }
