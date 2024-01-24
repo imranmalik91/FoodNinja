@@ -18,6 +18,8 @@
 		1D93C8BA2B4DACEB00DEE67E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D93C8B92B4DACEB00DEE67E /* CustomTextField.swift */; };
 		1DB978D52B61323F00560483 /* SignupBioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB978D42B61323F00560483 /* SignupBioView.swift */; };
 		1DB978D72B61324B00560483 /* SignupBioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB978D62B61324B00560483 /* SignupBioViewModel.swift */; };
+		1DB978D92B6137A300560483 /* SignupPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB978D82B6137A300560483 /* SignupPaymentView.swift */; };
+		1DB978DB2B6137AF00560483 /* SignupPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB978DA2B6137AF00560483 /* SignupPaymentViewModel.swift */; };
 		1DD9D38F2B419FCE00D574A4 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9D38C2B419FCE00D574A4 /* OnboardingContent.swift */; };
 		1DD9D3902B419FCE00D574A4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9D38D2B419FCE00D574A4 /* OnboardingView.swift */; };
 		1DD9D3912B419FCE00D574A4 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9D38E2B419FCE00D574A4 /* OnboardingViewModel.swift */; };
@@ -41,6 +43,8 @@
 		1D93C8B92B4DACEB00DEE67E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1DB978D42B61323F00560483 /* SignupBioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupBioView.swift; sourceTree = "<group>"; };
 		1DB978D62B61324B00560483 /* SignupBioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupBioViewModel.swift; sourceTree = "<group>"; };
+		1DB978D82B6137A300560483 /* SignupPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentView.swift; sourceTree = "<group>"; };
+		1DB978DA2B6137AF00560483 /* SignupPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentViewModel.swift; sourceTree = "<group>"; };
 		1DD9D38C2B419FCE00D574A4 /* OnboardingContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		1DD9D38D2B419FCE00D574A4 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1DD9D38E2B419FCE00D574A4 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 			children = (
 				1DB978D42B61323F00560483 /* SignupBioView.swift */,
 				1DB978D62B61324B00560483 /* SignupBioViewModel.swift */,
+				1DB978D82B6137A300560483 /* SignupPaymentView.swift */,
+				1DB978DA2B6137AF00560483 /* SignupPaymentViewModel.swift */,
 			);
 			path = SignupOnboardingViews;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5F02702B3814D500775AA7 /* ContentView.swift in Sources */,
+				1DB978DB2B6137AF00560483 /* SignupPaymentViewModel.swift in Sources */,
 				1DD9D38F2B419FCE00D574A4 /* OnboardingContent.swift in Sources */,
 				1DE16AC62B42CB67009F021E /* LoginViewModel.swift in Sources */,
 				1D5F02802B3815B100775AA7 /* Image.swift in Sources */,
@@ -263,6 +270,7 @@
 				1DF3CF602B5ADB6D00221C4B /* SignupViewModel.swift in Sources */,
 				1DD9D3942B41A36C00D574A4 /* CustomButton.swift in Sources */,
 				1D5F026E2B3814D500775AA7 /* FoodNinjaApp.swift in Sources */,
+				1DB978D92B6137A300560483 /* SignupPaymentView.swift in Sources */,
 				1DB978D52B61323F00560483 /* SignupBioView.swift in Sources */,
 				1DB978D72B61324B00560483 /* SignupBioViewModel.swift in Sources */,
 				1D93C8BA2B4DACEB00DEE67E /* CustomTextField.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  SignupBioView.swift
+//  SignupPaymentView.swift
 //  FoodNinja
 //
 //  Created by Imran on 24/01/24.
@@ -7,19 +7,20 @@
 
 import SwiftUI
 
-struct SignupBioView: View {
-    @StateObject private var viewModel = SignupBioViewModel()
+struct SignupPaymentView: View {
+    @StateObject private var viewModel = SignupPaymentViewModel()
     @EnvironmentObject private var navigationStore: NavigationStore
     
     var body: some View {
         GeometryReader { reader in
+            
             ZStack {
                 Image(name: .splash)
                     .ignoresSafeArea()
                 
                 ScrollView {
                     VStack(spacing: 20) {
-                        Text("Fill in your bio to get \nstarted")
+                        Text("Payment Method")
                             .font(.system(size: 25, weight: .bold))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top)
@@ -28,23 +29,32 @@ struct SignupBioView: View {
                             .font(.system(size: 12, weight: .regular))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         
+                        ForEach(viewModel.paymentMethods, id: \.id) { method in
+                            HStack {
+                                Image(name: method.logo)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 70)
+                            .background(viewModel.selectedPaymentMethod == method ? .lightGreen : .bg)
+                            .cornerRadius(22)
+                            .padding(.top)
+                            .onTapGesture {
+                                withAnimation(.easeInOut(duration: 0.5)) {
+                                    viewModel.selectedPaymentMethod = method
+                                }
+                            }
+                        }
                         
-                        CustomTextField(placeholder: "First Name", text: $viewModel.firstName)
-                        
-                        CustomTextField(placeholder: "Last Name", text: $viewModel.lastName)
-                        
-                        CustomTextField(placeholder: "Mobile Number", text: $viewModel.mobileNumber)
-
                         Spacer()
                         
-                        let config = CustomButtonConfig(title: "Next") {
-                            navigationStore.push(to: .signPaymentView)
-                        }
+                        let config = CustomButtonConfig(title: "Next", action: {
+                            
+                        })
+                        
                         CustomButton(config: config)
                             .padding(.bottom)
                             .frame(width: 150)
                     }
-                    .frame(maxWidth: .infinity)
                     .frame(height: reader.size.height)
                 }
                 .padding(.horizontal)
@@ -64,5 +74,5 @@ struct SignupBioView: View {
 }
 
 #Preview {
-    SignupBioView()
+    SignupPaymentView()
 }

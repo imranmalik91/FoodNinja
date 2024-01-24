@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum NavigationDestination: Hashable {
-    case login, signup, signupBioView
+    case login, signup, signupBioView, signPaymentView
     
     @ViewBuilder
     var view: some View {
@@ -19,6 +19,8 @@ enum NavigationDestination: Hashable {
             SignupView()
         case .signupBioView:
             SignupBioView()
+        case .signPaymentView:
+            SignupPaymentView()
         }
     }
 }
